@@ -1,9 +1,28 @@
 *{
     padding: 0;
     margin: 0;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tittle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+hr {
+    width: 7%;
+    float: center;
+    border: none; /* Убираем границу */
+    background-color: #ff8b38; /* Цвет линии */
+    color: #ff8b38; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
 
 .layout {
     min-height: 100vh;
@@ -14,3 +33,81 @@
 .layout_footer {
     margin-top: auto;
 }
+
+.stylish {
+    height: 210px;
+    background: grey;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    height: 210px;
+}
+.awesome {
+    background: black;
+    text-align: center;
+    height: 120px;
+}
+
+.awesome>.i {
+    size: 25px;
+    background: cornsilk;
+}
+
+.btn {
+    max-width: 100%;
+	padding: 12px 30px;
+	border: 1px solid transparent;
+    position: relative;
+    text-align: center;
+}
+
+.btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid transparent;
+    pointer-events: none;
+  }
+  
+.btn._color_white {
+    color: #fff; 
+    background: transparent;
+    border-color: #f5f5f5;
+}
+  
+  /* Модификаторы цвета */
+.btn._color_white:after {
+    border-color: #e6e6e6;
+}
+  
+.btn._color_white:hover {
+    color: #000;
+}
+  
+.btn._color_orange {
+      color: #fff; 
+      background: #ff8b38;
+}
+  
+.btn._color_orange:hover {
+    color: #9e6e4b;
+}
+  
+  /* Модификаторы бордера */
+.btn._border-radius {
+    border-radius: 4px;
+}
+  
+  /* Модификаторы ширины */
+.btn._full-width {
+    width: 100%;
+}
+  
+
+
