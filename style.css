@@ -291,3 +291,81 @@ body {
 .textfield__control:focus {
     outline: 0 none;
 }
+
+
+/* social-media */
+.social-media {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .15);
+    padding: 18px 0;
+}
+
+.social-media__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.social-media__content {
+    width: 408px;
+}
+
+/* social-media__text */
+.social-media__text {
+    font-size: 14px;
+    color: #86878b;
+    line-height: 20px;
+}
+
+.social-media__title {
+    margin: 0 0 3px;
+}
+
+.social-media__social {
+    width: 692px;
+    padding: 0 0 0 22px;
+}
+
+.social-media__social .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media__social .social__link {
+    font-size: 48px;
+    color: #ccc;
+}
+
+/* page-title */
+.page-title {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* collapse */
+.collapse {
+    background: #f5f5f5;
+    height: 600px;
+}
+
+.collapse-content{
+    line-height: 35px;
+    height: 335px;
+    width: 680px;
+}
+
+.collapse-content__submit {
+    background-color: #333; /* Green background */
+    border: 1px solid#333; /* Green border */
+    color: #fff; /* White text */
+    padding: 1px 10px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 110px;
+    height: 110px;
+    display: block;
+}
+
+.collapse__img {
+    float: right;
+}
