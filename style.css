@@ -178,7 +178,7 @@ body {
 /* hero */
 .hero {
     padding: 110px 0 140px 0; 
-    background: #9a9a9a;
+    background: url('images/hero.bg.jpg') center no-repeat #9a9a9a;
     color: #fff;
 }
 
@@ -347,12 +347,18 @@ body {
 .collapse {
     background: #f5f5f5;
     height: 600px;
+    padding: 72px 0;
+}
+
+.collapse__wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .collapse-content{
     line-height: 35px;
     height: 335px;
-    width: 680px;
+    width: 680px;    
 }
 
 .collapse-content__submit {
@@ -368,4 +374,66 @@ body {
 
 .collapse__img {
     float: right;
+}
+
+
+/* content-block */
+.content-block {
+    background: #fff;
+    padding: 70px 0;
+}
+
+.content-block__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+content-block__content{
+    display: block;
+}
+
+.content-block__img {
+    display: block;
+    width: 454px;
+    box-shadow:  0 40px 40px 10px rgba(0, 0, 0, 0.15);
+}
+
+.page-title ._decor:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    margin: 30px 0 35px 4px;
+    background: #ff8b38;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+}
+
+.content-block__text {
+    font-size: 14px;
+    color: #86878b;
+    line-height: 20px;
+    margin: 60px 0;
+}
+
+.social-media__title page-title {
+    margin: 0 0 3px;
+}
+
+
+/* content-block._revers */
+.content-block ._revers {
+    background: #f5f5f5;
+    height: 522px;
+}
+
+.content-block._revers .content-block__img-box {
+    order: 2;
+}
+
+.content-block._revers .content-block__content {
+    order: 1;
+}
+
+.text2 {
+    margin: 10px 0;
 }
