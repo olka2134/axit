@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <link href="fonts/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
@@ -152,18 +153,161 @@
                 </div>
             </section>
 
-            <section class="collapse">
+            <section class="tabs js--tabs">
                 <div class="container">
-                    <div class="collapse__wrapper">
-                        <div class="collapse-content">
-                            <button class="collapse-content__submit" type="submit">TAB 1</button>
-                            <button class="collapse-content__submit" type="submit">TAB 2</button>
-                            <button class="collapse-content__submit" type="submit">TAB 3</button>
+                    <div class="tabs__wrapper">
+                        <div class="tabs__btns">
+                            <button class="tabs__btn _active js--tabs__btn" type="button">
+                                <span class="tabs__btn-height-holder">
+                                    <span class="tabs__btn-text">TAB 1</span>
+                                </span>
+                            </button>
+
+                            <button class="tabs__btn js--tabs__btn" type="button">
+                                <span class="tabs__btn-height-holder">
+                                    <span class="tabs__btn-text">TAB 2</span>
+                                </span>
+                            </button>
+
+                            <button class="tabs__btn js--tabs__btn" type="button">
+                                <span class="tabs__btn-height-holder">
+                                    <span class="tabs__btn-text">TAB 3</span>
+                                </span>
+                            </button>
+
                         </div>
-                        <div class="collapse__img">
-                            <a class="collapse__img" href="/">
-                                <img class="collapse__img"src="images/collapse__img.png" alt="axit">
-                            </a>
+
+                        <div class="tabs__slider js--tabs__slider">
+                            <div class="tabs__slide">
+                                <div class="tabs__slide-wrapper">
+                                    <div class="tabs__slide-content">
+                                        <h3 class="tabs__slide-title page-title">Tab1</h3>
+                                        
+                                        <div class="tabs__slide-text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                                elit. Donec mollis euismod condimentum. Suspendisse 
+                                                potenti. Mauris sit amet odio hendrerit, facilisis 
+                                                dui eu, congue tortor. In vitae maximus nulla. Donec 
+                                                eu fringilla risus, vitae vulputate nibh. Ut non 
+                                                sapien ac orci aliquet dapibus. Morbi sed nisi non 
+                                                quam molestie interdum eu nec tortor. Orci varius 
+                                                natoque penatibus et magnis dis parturient montes, 
+                                                nascetur ridiculus mus.                                       
+                                                
+                                            </p>
+                                            <p>
+                                                Etiam vestibulum aliquam pellentesque. Pellentesque est
+                                                enim, commodo in sollicitudin nec, scelerisque a justo. 
+                                                Sed eget molestie dui. Donec at laoreet ipsum, sit amet 
+                                                dictum velit. Suspendisse tristique mauris vitae congue 
+                                                tristique. Praesent vel erat tempor odio scelerisque 
+                                                laoreet vel in magna. Vivamus porta mi ac nisl posuere 
+                                                pretium. Nunc semper odio eget ante pulvinar, quis semper
+                                                mi facilisis. Cras non volutpat neque. Cras dapibus 
+                                                bibendum arcu at viverra. Morbi non malesuada turpis.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="tabs__slide-btn-box">
+                                            <button type="button" class="btn _color_orange _border-radius">Download</button>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slide-img-box">
+                                        <img class="tabs__slide-img" src="images/tab1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__slide">
+                                <div class="tabs__slide-wrapper">
+                                    <div class="tabs__slide-content">
+                                        <h3 class="tabs__slide-title page-title">Tab2</h3>
+                                        
+                                        <div class="tabs__slide-text">
+                                            <p>
+                                                Duis imperdiet tortor sed fringilla tincidunt.
+                                                Maecenas vitae gravida justo. Nam ut eros sit 
+                                                amet nulla suscipit semper. Integer venenatis 
+                                                lobortis sapien. Nam sodales magna eget nunc 
+                                                volutpat, ac placerat enim pretium. Suspendisse 
+                                                dui odio, faucibus eu quam eget, viverraeuismod libero.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing                                             
+                                                elit. Ut nec dolor quis purus venenatis finibus. 
+                                                Integer ac nulla eget nisi laoreet iaculis vitae quis
+                                                lacus. Mauris viverra sit amet ex nec consequat. 
+                                                In rutrum lorem urna, id pharetra nisi eleifend a.
+                                            </p>
+                                            <p>
+                                                Phasellus et cursus erat. Vivamus at nulla rhoncus 
+                                                sapien malesuada cursus. Nulla tincidunt neque nec 
+                                                mauris vehicula rhoncus. Fusce vulputate tempus ullamcorper. 
+                                                Praesent bibendum bibendum vestibulum. Donec finibus 
+                                                lorem massa. Vestibulum commodo molestie turpis nonauctor. 
+                                                Ut eu est a purus consequat viverra. Praesent consectetur 
+                                                id enim et congue. Vestibulum porttitor, turpis in commodo 
+                                                vulputate,enim mauris dignissim erat, quis sagittis sapien 
+                                                lectus quis magna. Quisque id mollis eros.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="tabs__slide-btn-box">
+                                            <button type="button" class="btn _color_orange _border-radius">Download</button>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slide-img-box">
+                                        <img class="tabs__slide-img" src="images/tab2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__slide">
+                                <div class="tabs__slide-wrapper">
+                                    <div class="tabs__slide-content">
+                                        <h3 class="tabs__slide-title page-title">Tab3</h3>
+                                        
+                                        <div class="tabs__slide-text">
+                                            <p>
+                                                Integer augue ligula, laoreet et turpis ut, blandit
+                                                tincidunt elit. Vivamus at ipsum quis arcu rutrum lacinia. 
+                                                Curabitur iaculis justo lacus, a sodales dolor aliquet sed. 
+                                                Pellentesque dapibus sem sed tellus tristique iaculis. 
+                                                Nulla libero nulla, tempor vitae sollicitudin et, euismod 
+                                                et mauris. Nunc sollicitudin egestas nunc, efficitur 
+                                                rutrum odio luctus eget. Curabitur eget rhoncus mauris, 
+                                                sit amet pretium velit. Integer aliquet lectus in quam 
+                                                suscipit lobortis.Aenean congue placerat molestie. 
+                                                Fusce tempus lectus vitae nunc lobortis, nec placerat 
+                                                ligula finibus. Maecenas convallis massa vel tellus molestie,
+                                                ac rutrum lacus venenatis.
+                                            </p>
+                                            <p>
+                                                Proin commodo ullamcorper sodales. Vestibulum ornare
+                                                accumsan nibh, vitae auctor elit ullamcorper id. 
+                                                Nullam at quam posuere, pretium enim eget, tristique 
+                                                tellus. Duis id ullamcorper sem. Nullam quis mi rutrum,
+                                                tempor enim sit amet, vulputate nunc. Fusce consectetur 
+                                                erat sit amet sagittis malesuada. Etiam nec tortor 
+                                                accumsan, tincidunt magna non, consequat nisl. 
+                                                Proin et congue libero. Nunc vestibulum est faucibus 
+                                                maximus iaculis. Sed mattis odio eu consequat luctus. 
+                                                Nunc sollicitudin quam magna, sed bibendum velit lacinia
+                                                at. In imperdiet tristique arcu, vel tincidunt nulla 
+                                                porta sit amet. In molestie nisi sed ante tristique, 
+                                                eu finibus nulla venenatis.
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="tabs__slide-btn-box">
+                                            <button type="button" class="btn _color_orange _border-radius">Download</button>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__slide-img-box">
+                                        <img class="tabs__slide-img" src="images/tab3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -171,39 +315,41 @@
 
             <selection>
                 <div class="content-block">
-                    <div class="container">
-                        <div class="content-block__wrapper">
-                            <div class="content-block__img-box">
-                                <a class="content-block__img" href="/">
-                                    <img class="content-block__img"src="images/hero.jpg" alt="axit">
-                                </a>
-                            </div>
-                            <div class="content-block__content">
-                                <h3 class="content-block__title page-title _decor">Sub list section</h3>
-                            
-                                <div class="content-block__text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
-                                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
-                                    accumsan et viverra justo commodo.</p>
-                                <div class="list">
-                                    <div class="list__item">
-                                        <div clas="list__item-wrapper">
-                                            <div class="list__item-icon-box">
-                                                <div class="list__item-icon fa fas"></div>                                                
-                                            </div>
-                                            <div class="list__item-content">
-                                                <h4 class="list__item-title"></h4>
-                                                <div class="list__item-text">
-                                                    <p></p>
+                    <div class="content-block _nerevers">
+                        <div class="container">
+                            <div class="content-block__wrapper">
+                                <div class="content-block__img-box">
+                                    <a class="content-block__img" href="/">
+                                        <img class="content-block__img"src="images/hero.jpg" alt="axit">
+                                    </a>
+                                </div>
+                                <div class="content-block__content left">
+                                    <h3 class="content-block__title page-title _decor">Sub list section</h3>
+                                
+                                    <div class="content-block__text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+                                        euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
+                                        accumsan et viverra justo commodo.</p>
+                                    <div class="list">
+                                        <div class="list__item">
+                                            <div clas="list__item-wrapper">
+                                                <div class="list__item-icon-box">
+                                                    <div class="list__item-icon fa fas"></div>                                                
+                                                </div>
+                                                <div class="list__item-content">
+                                                    <h4 class="list__item-title"></h4>
+                                                    <div class="list__item-text">
+                                                        <p></p>
+                                                    </div>
                                                 </div>
                                             </div>
+                    
                                         </div>
-                
                                     </div>
+                                
                                 </div>
-                            
+                                
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -214,7 +360,7 @@
                             <div class="content-block__img-box">
                                 <img class="content-block__img"src="images/hero.jpg" alt="axit">
                             </div>
-                            <div class="content-block__content">
+                            <div class="content-block__content right">
                                 <h4 class="content-block__title.page-title _decor">Standard Picture Section</h4>
                             
                                 <div class="content-block__text">
@@ -280,6 +426,7 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>   
 </body>
 </html>
