@@ -588,181 +588,100 @@ p {
 }
 
 
-/* pricing-options */
-.pricing-options {
-    padding: 105px 0 95px;
-    background: #f5f5f5;
+/* customers */
+.customers {
+    padding: 148px 0 114px;
 }
 
-.pricing-options__wrapper {
-    display: flex;
-    align-items: flex-end;
-    padding: 80px 0;
+.customers-header__title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 45px;
 }
-
-.pricing-options__item {
-    width: 33.3333%;
-    padding: 0 15px;
-}
-
-.pricing-option {
-    position: relative;
-}
-
-.pricing-option__header:after {
+    
+.customers-header__title:after {
     content: "";
     display: block;
-    width: 100%;
+    width: 70px;
     height: 2px;
-    background: #f5f5f5;
-    box-shadow: 0 0 0 rgba(0, 0, 0, .15);
-}
-
-.pricing-option__title {
-    background: #333;
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    padding: 23px 23px;
-}
-
-.pricing-option__price {
-    background: #333;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.pricing-option__total {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.pricing-option__first {
-    font-size: 94px;
-    font-weight: 600;
-}
-
-.pricing-option__end {
-    font-size: 114px;
-    font-weight: 600;
-}
-
-.pricing-option__period {
-    font-size: 14px;
-    font-style: italic;
-    color: #fff;
-    margin: 0;
-    padding: 20px 0;
-}
-
-.pricing-option__lable {
+    margin: 25px 0 25px 504px;
     background: #ff8b38;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 5px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+}
+
+.customers-header__subtitle {
     text-align: center;
-}
-
-.pricing-option__lable p {
-    margin: 0;
-    padding: 10px 0;
-}
-
-.pricing-option__feature-text {
-    list-style-type: none;
-    text-align: center;
-    background: #fff;
-    color: #86878b;
+    font-family: 'Open suns', sans-serif;
     font-size: 14px;
-    padding: 15px 0;
-    text-transform: uppercase;
+    color: #e5e5e5;
+    padding: 0 0 80px 0;
 }
 
-.pricing-option__feature-text:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 0.1px;
-    background: #f5f5f5;
-    box-shadow: 0 0 0 rgba(0, 0, 0, .15);
-}
-
-
-/* reviews */
-.reviews {
-    padding: 100px 0;
-}
-
-.reviews .section-header {
-    margin: 0 0 50px;
-}
-
-.reviews__wrapper {
+.customers-wrapper {
     display: flex;
-    margin: 0 -15px;
+    align-items: flex-start;
 }
 
-.reviews__item {
-    width: 33.3333%;
-    padding: 0 15px;
-}
-
-.reviews__item-text {
-    width: 273px;
-    padding: 20px 15px 25px;
-    margin: 0 0 23px;
-    background: #f5f5f5;
-    border-radius: 4px;
-    position: relative;
-    color: #86878b;
-    font-size: 14px;
-    font-style: italic;
-}
-
-.reviews__item-text:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 100%;
-    left: 22px;
-    border-left: 11px solid transparent;
-    border-right: 11px solid transparent;
-    border-top: 16px solid #f5f5f5;
-}
-
-.reviews__item-text p:last-child {
-    margin-bottom: 0;
-}
-
-.reviews__item-autor {
+.customers__item-img {
     display: flex;
     align-items: center;
-}
-
-.reviews__item-autor-avatar {
+    justify-content: center;
     width: 70px;
     height: 70px;
+    border: 3px solid #ff8b38;
     border-radius: 50%;
-    background: center no-repeat;
-    background-size: cover;
 }
 
-.reviews__item-autor-wrapper {
-    padding: 0 0 0 15px;
-}
-
-.reviews__item-autor-name {
-    color: #333;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.reviews__item-autor-post {
+.customers__item-content {
     color: #86878b;
     font-size: 14px;
+    font-weight: 100;
+    font-style: oblique;
+    padding-right: 125px;
+}
+
+.customers__item-subtitle {
+    color: #86878b;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+/* option */
+.option {
+    padding: 148px 0 114px;
+    background: #f5f5f5;
+}
+
+.option-header__title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 45px;
+}
+    
+.option-header__title:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 25px 0 25px 504px;
+    background: #ff8b38;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+}
+
+.option-header__subtitle {
+    text-align: center;
+    font-family: 'Open suns', sans-serif;
+    font-size: 14px;
+    color: #e5e5e5;
+    padding: 0 0 80px 0;
+}
+
+.option__wrapper {
+    display: flex;
+    align-items: flex-start;
 }
