@@ -185,6 +185,7 @@ p {
     padding: 110px 0 140px 0; 
     background: url('images/hero.bg.jpg') center no-repeat #9a9a9a;
     color: #fff;
+    background-size: cover;
 }
 
 .hero__wrapper {
@@ -548,7 +549,7 @@ p {
 }
 
 .why .section-header {
-    margin-bottom: 0 0 80px;
+    margin: 0 0 80px;
 }
 
 .why__item {
@@ -590,105 +591,99 @@ p {
 
 /* pricing-options */
 .pricing-options {
-    padding: 105px 0 95px;
+    padding: 102px 0 95px;
     background: #f5f5f5;
+}
+
+.pricing-options .section-header {
+    margin-bottom: 75px;
 }
 
 .pricing-options__wrapper {
     display: flex;
     align-items: flex-end;
-    padding: 80px 0;
+    margin: 0 -20px;
 }
 
 .pricing-options__item {
     width: 33.3333%;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .pricing-option {
     position: relative;
 }
 
-.pricing-option__header:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #f5f5f5;
-    box-shadow: 0 0 0 rgba(0, 0, 0, .15);
+.pricing-option__header {
+    margin-bottom: 1px;
 }
 
 .pricing-option__title {
     background: #333;
     color: #fff;
     font-size: 20px;
+    font-weight: 700;
     text-align: center;
-    padding: 23px 23px;
+    padding: 15px;
 }
 
 .pricing-option__price {
+    padding: 5px 0 20px;
     background: #333;
     color: #fff;
     font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     text-align: center;
-    padding: 20px 0;
 }
 
 .pricing-option__total {
+    display: block;
+    margin-bottom: 15px;
     color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.pricing-option__first {
     font-size: 94px;
-    font-weight: 600;
+    line-height: 1;
 }
 
-.pricing-option__end {
-    font-size: 114px;
-    font-weight: 600;
+.pricing-option__total-cur {
+    font-size: 35px;
 }
 
 .pricing-option__period {
+    display: block;
     font-size: 14px;
     font-style: italic;
+    font-weight: 600;
     color: #fff;
-    margin: 0;
-    padding: 20px 0;
+    opacity: .5;
 }
 
-.pricing-option__lable {
+.pricing-option__label {
     background: #ff8b38;
     color: #fff;
     font-size: 14px;
-    font-weight: 600;
-    padding: 5px 0;
+    font-weight: 700;
+    padding: 2px 0;
     text-align: center;
 }
 
-.pricing-option__lable p {
-    margin: 0;
-    padding: 10px 0;
+.pricing-option__label-text {
+    display: block;
+    padding: 9px 0;
 }
 
-.pricing-option__feature-text {
-    list-style-type: none;
+.pricing-option__features {
+    list-style: none;
+    box-shadow:  0 10px 20px rgba(0, 0, 0, .05);
+}
+
+.pricing-option__feature {
+    margin-bottom: 1px;
     text-align: center;
     background: #fff;
     color: #86878b;
     font-size: 14px;
-    padding: 15px 0;
+    padding: 10px 0;
     text-transform: uppercase;
-}
-
-.pricing-option__feature-text:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 0.1px;
-    background: #f5f5f5;
-    box-shadow: 0 0 0 rgba(0, 0, 0, .15);
 }
 
 
@@ -765,4 +760,89 @@ p {
 .reviews__item-autor-post {
     color: #86878b;
     font-size: 14px;
+}
+
+
+/* dawnload */
+.dawnload {
+    padding: 75px 0 60px;
+    text-align: center;
+    background: url('images/hero.bg.jpg') center no-repeat #9a9a9a;
+    background-size: cover;
+}
+
+.section-header__title-light {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #fff;
+}
+    
+.section-header__title-light:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 20px auto 25px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+}
+
+.section-header__subtitle-light {
+    text-align: center;
+    font-family: 'Open suns', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.dawnload__btn {
+    display: inline-block;
+}
+
+
+/* contact */
+.contact {
+    padding: 110px 0 80px;
+    text-align: center;
+}
+
+.contact__btn {
+    display: inline-block;
+}
+
+
+/* contact */
+.contact__wrapper {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.contact__form-name {
+    width: 543px;
+    padding: 0 15px;
+}
+
+.contact__form-message {
+    width: 543px;
+    padding: 0 65px;
+}
+
+.contact-form__title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-form__title-text-lead {
+    text-transform: uppercase;
+    color: #ff8b38;
+}
+
+.contact-form__field {
+    margin: 0 0 30px;
 }
