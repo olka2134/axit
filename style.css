@@ -763,8 +763,8 @@ p {
 }
 
 
-/* dawnload */
-.dawnload {
+/* download */
+.download {
     padding: 75px 0 60px;
     text-align: center;
     background: url('images/hero.bg.jpg') center no-repeat #9a9a9a;
@@ -799,7 +799,7 @@ p {
     opacity: 0.5;
 }
 
-.dawnload__btn {
+.download__btn {
     display: inline-block;
 }
 
