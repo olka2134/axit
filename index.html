@@ -24,19 +24,19 @@
                     <nav class="site-header__menu">
                         <ul class="site-menu">
                             <li class="site-menu__item">
-                                <a class="site-menu__link"href="#">Features</a>
+                                <a class="site-menu__link js--anchor-link"href="#features">Features</a>
                             </li>
                             <li class="site-menu__item">
-                                <a class="site-menu__link"href="#">About</a>
+                                <a class="site-menu__link js--anchor-link"href="#about">About</a>
                             </li>
                             <li class="site-menu__item">
-                                <a class="site-menu__link"href="#">Pricing</a>
+                                <a class="site-menu__link js--anchor-link"href="#pricing">Pricing</a>
                             </li>
                             <li class="site-menu__item">
-                                <a class="site-menu__link"href="#">Reviews</a>
+                                <a class="site-menu__link js--anchor-link"href="#reviews">Reviews</a>
                             </li>
                             <li class="site-menu__item">
-                                <a class="site-menu__link"href="#">Contact</a>
+                                <a class="site-menu__link"href="#contact">Contact</a>
                             </li>
                         </ul>                    
                     </nav>
@@ -151,7 +151,7 @@
                 </div>
             </section>
 
-            <section class="tabs js--tabs">
+            <section id="features" class="tabs js--tabs">
                 <div class="container">
                     <div class="tabs__wrapper">
                         <div class="tabs__btns">
@@ -311,7 +311,7 @@
                 </div>
             </section>
 
-            <section class="content-block">
+            <section id="about" class="content-block">
                 <div class="content-block">
                     <div class="container">
                         <div class="content-block__wrapper">
@@ -442,7 +442,7 @@
                 </div>
             </section>
             
-            <section class="pricing-options">
+            <section id="pricing" class="pricing-options">
                 <div class="container">
                     <div class="section-header">
                         <h3 class="section-header__title">PRICING OPTIONS</h3>
@@ -531,7 +531,7 @@
                 </div>
             </section>
 
-            <section class="reviews">
+            <section id="reviews" class="reviews">
                 <div class="container">
                     <div class="section-header">
                         <h3 class="section-header__title">WHAT OUR CUSTOMERS ARE SAYING</h3>
@@ -609,9 +609,9 @@
 
             <section class="download">
                 <div class="container">
-                    <div class="section-header">
-                        <h3 class="section-header__title-light">STYLISH AXURE DESIGN</h3>
-                        <div class="section-header__subtitle-light">
+                    <div class="section-header _light">
+                        <h3 class="section-header__title">STYLISH AXURE DESIGN</h3>
+                        <div class="section-header__subtitle">
                             <p>
                                 Use the sections you need, remove the ones you don't. Create gorgeous prototypes 
                                 faster than ever!
@@ -625,58 +625,49 @@
                 </div>
             </section>
             
-            <section>
-                <div class="contact">
-                    <div class="container">
-                        <div class="section-header">
-                            <h3 class="section-header__title">CONTACT US</h3>
-                            <div class="section-header__subtitle">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact__wrapper">
-
-                            <div class="contact__form-name">
-                                <form class="contact-form__name">
-                                    <div class="contact-form__body">
-                                        <div class="contact-form__field">
-                                            <div class="textfield">
-                                                <input class="textfield__control" placeholder="Name">
-                                            </div>
-                                        </div>
-                                        <div class="contact-form__field">
-                                            <div class="textfield">
-                                                <input class="textfield__control" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="contact-form__field">
-                                            <div class="textfield">
-                                                <input class="textfield__control" placeholder="Subject">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <div class="contact__form-message">
-                                <form class="contact-form__message">
-                                    <div class="contact-form__field">
-                                        <div class="textfield">
-                                            <textarea class="textfield__control" cols="30" rows="10" placeholder="Message"></textarea><br>
-                                        </div>
-                                    </div> 
-                                </form>
-                            </div>
-                        </div>
-                        <div class="contact__btn">
-                                <button class="btn _color_orange">Send Message</button>
+            <form id="contact" class="contact-form">
+                <div class="container">
+                    <div class="section-header">
+                        <h3 class="section-header__title">CONTACT US</h3>
+                        <div class="section-header__subtitle">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
                     </div>
+
+                    <div class="contact-form__wrapper">
+                        <div class="contact-form__fieldset">
+                            <div class="contact-form__field">
+                                <div class="textfield">
+                                    <input class="textfield__control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="contact-form__field">
+                                <div class="textfield">
+                                    <input class="textfield__control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="contact-form__field">
+                                <div class="textfield">
+                                    <input class="textfield__control" placeholder="Subject">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form__fieldset">
+                            <div class="contact-form__field">
+                                <div class="textfield">
+                                    <textarea class="textarea__control" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__btn-box">
+                        <button class="btn _color_orange" type="submit" >Send Message</button>
+                    </div>
                 </div>
-            </section>
+            </form>
 
         </main>
         <footer class="layout__footer">

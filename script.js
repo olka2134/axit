@@ -1,4 +1,5 @@
 $(function(){
+    // tabs
     var btns = $('.js--tabs__btn');
     var slider = $('.js--tabs__slider');
     
@@ -17,5 +18,17 @@ $(function(){
 
         btns.removeClass('_active');
         clickedBtn.addClass('_active');
+    });
+
+
+    // anchor links
+    var links = $('.js--anchor-link');
+    
+    links.on('click', function(e) {
+        var targetID = $(e.currentTarget).attr('href');
+        
+        $('html, body').animate({
+            scrollTop: $(targetID).offset().top
+        },800);
     });
 });
