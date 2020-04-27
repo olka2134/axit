@@ -1389,7 +1389,7 @@ p {
 /* xs (mobile) */
 @media (max-width: 767px) {
     .pricing-options .section-header {
-        margin-bottom: 45px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1399,9 +1399,25 @@ p {
     margin: 0 -20px;
 }
 
+/* xs (mobile) */
+@media (max-width: 767px) {
+    .pricing-options__wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 .pricing-options__item {
     width: 33.3333%;
     padding: 0 20px;
+}
+
+/* xs (mobile) */
+@media (max-width: 767px) {
+    .pricing-options__item {
+        width: 70%;
+        padding: 15px;
+    }
 }
 
 .pricing-option {
@@ -1840,7 +1856,6 @@ p {
 @media (max-width: 1169px) {
     .tabs,
     .why,
-    .pricing-options,
     .reviews {
         display: none;
     }
