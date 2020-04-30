@@ -1,9 +1,9 @@
 $(function(){
     // tabs
-    var btns = $('.js--tabs__btn');
-    var slider = $('.js--tabs__slider');
+    var tabsSliderBtns = $('.js--tabs__btn');
+    var tabsSlider = $('.js--tabs__slider');
     
-    slider.slick({
+    tabsSlider.slick({
         fade: true,
         adaptiveHeight: true,
         arrows: false,
@@ -11,12 +11,12 @@ $(function(){
         swipe: false,
     });
 
-    btns.on('click', function(e){
+    tabsSliderBtns.on('click', function(e){
         var clickedBtn = $(e.currentTarget);
-        var clickedBtnIndex = btns.index(clickedBtn);
-        slider.slick('slickGoTo', clickedBtnIndex);
+        var clickedBtnIndex = tabsSliderBtns.index(clickedBtn);
+        tabsSlider.slick('slickGoTo', clickedBtnIndex);
 
-        btns.removeClass('_active');
+        tabsSliderBtns.removeClass('_active');
         clickedBtn.addClass('_active');
     });
 
@@ -30,5 +30,52 @@ $(function(){
         $('html, body').animate({
             scrollTop: $(targetID).offset().top
         },800);
+    });
+
+
+    // reviews slider //
+    var reviewsSlider = $('.js--reviews__slider');
+    reviewsSlider.slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        adaptiveHeight: true,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+    });
+
+
+    // pricing slider //
+    var pricingSlider = $('.js--pricing__slider');
+    pricingSlider.slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        adaptiveHeight: true,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
 });
