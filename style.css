@@ -1544,6 +1544,18 @@ p {
     }
 }
 
+.pricing-options .slick-dots {
+    display: none;
+}
+
+/* xs (mobile) */
+@media (max-width: 767px) {
+    .pricing-options .slick-dots {
+        display: flex;
+    }
+}
+
+
 
 /* reviews */
 .reviews {
