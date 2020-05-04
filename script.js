@@ -1,6 +1,7 @@
 $(function(){
     // tabs
     var tabsSliderBtns = $('.js--tabs__btn');
+    var tabsSliderSelect = $('.js--tabs__select');
     var tabsSlider = $('.js--tabs__slider');
     
     tabsSlider.slick({
@@ -11,13 +12,20 @@ $(function(){
         swipe: false,
     });
 
+    tabsSlider.on('beforeChange', (e, slick, currentSlide, nextSlide) => {
+        tabsSliderBtns.removeClass('_active');
+        tabsSliderBtns.filter(':nth-child(' + (nextSlide + 1)+ ')').addClass('_active');
+        tabsSliderSelect.val(nextSlide + 1);
+    });
+
     tabsSliderBtns.on('click', function(e){
         var clickedBtn = $(e.currentTarget);
         var clickedBtnIndex = tabsSliderBtns.index(clickedBtn);
         tabsSlider.slick('slickGoTo', clickedBtnIndex);
+    });
 
-        tabsSliderBtns.removeClass('_active');
-        clickedBtn.addClass('_active');
+    tabsSliderSelect.on('change', (e) => {
+        tabsSlider.slick('slickGoTo', e.target.value - 1);
     });
 
 
@@ -35,6 +43,7 @@ $(function(){
 
     // reviews slider //
     var reviewsSlider = $('.js--reviews__slider');
+
     reviewsSlider.slick({
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -62,6 +71,7 @@ $(function(){
 
     // pricing slider //
     var pricingSlider = $('.js--pricing__slider');
+
     pricingSlider.slick({
         slidesToShow: 3,
         slidesToScroll: 3,
