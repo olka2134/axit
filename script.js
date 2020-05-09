@@ -34,9 +34,11 @@ $(function(){
     
     links.on('click', function(e) {
         var targetID = $(e.currentTarget).attr('href');
+
+        drawer.close();
         
         $('html, body').animate({
-            scrollTop: $(targetID).offset().top
+            scrollTop: $(targetID).offset().top - $('.js--site-header').height(),
         },800);
     });
 
@@ -87,5 +89,22 @@ $(function(){
                 }
             },
         ]
+    });
+
+
+    // mobile menu
+    var mobileMenu = $('.js--mobile-menu').clone(true);
+    var mobileMenuToggler = $('.js--mobile-menu-toggler');
+
+    var menu = new MmenuLight(mobileMenu[0]);
+    var navigator = menu.navigation({
+        theme: 'dark'
+    });
+    const drawer = menu.offcanvas({
+        position: 'right',
+    });
+
+    mobileMenuToggler.on('click', function() {
+        drawer.open();
     });
 });

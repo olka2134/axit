@@ -9,12 +9,13 @@
     <link href="fonts/fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="vendor/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/mmenu/mmenu-light.css">
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <div class="layout">
         <header class="layout__header">
-            <div class="site-header">
+            <div class="site-header js--site-header">
                 <div class="container">
                     <div class="site-header__wrapper">
                         <div class="site-header__logo">
@@ -23,7 +24,7 @@
                             </a>
                         </div>
 
-                        <nav class="site-header__menu">
+                        <nav class="site-header__menu js--mobile-menu">
                             <ul class="site-menu">
                                 <li class="site-menu__item">
                                     <a class="site-menu__link js--anchor-link"href="#features">Features</a>
@@ -38,13 +39,13 @@
                                     <a class="site-menu__link js--anchor-link"href="#reviews">Reviews</a>
                                 </li>
                                 <li class="site-menu__item">
-                                    <a class="site-menu__link js--anchor-link"href="#reviews">Contact</a>
+                                    <a class="site-menu__link js--anchor-link"href="#contact">Contact</a>
                                 </li>
                             </ul>                    
                         </nav>
 
                         <div class="site-header__menu-toggler">
-                            <button class="hamburger hamburger--vortex" type="button">
+                            <button class="hamburger hamburger--vortex js--mobile-menu-toggler" type="button">
                                 <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
                                 </span>
@@ -840,8 +841,10 @@
             </div>
         </footer>
     </div>
+    <script src="vendor/mmenu/mmenu-light.polyfills.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="vendor/mmenu/mmenu-light.js"></script>
     <script src="script.js"></script>   
 </body>
 </html>

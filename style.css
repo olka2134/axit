@@ -2004,9 +2004,19 @@ p {
 }
 
 
-/* @todo remove 
-@media (max-width: 1169px) {
-    .tabs {
-        display: none;
-    }
-}*/
+/* mobile menu */
+.mm-ocd .site-header__menu {
+    display: block;
+} 
+
+.mm-spn.mm-spn--navbar:after {
+    display: none;
+}
+
+.mm-spn.mm-spn--navbar ul:before {
+    display: none;
+}
+
+.mm-spn.mm-spn--navbar ul {
+    top: 0;
+}
